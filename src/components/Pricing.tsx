@@ -7,7 +7,7 @@ const plans = [
     price: "$12",
     period: "/mo",
     features: ["2,500 requests/month", "Email support", "All models included"],
-    url: "https://buy.stripe.com/PLACEHOLDER_DEV",
+    url: "https://buy.stripe.com/bJe00b20t58X0QX5lY7N607",
     highlighted: false,
   },
   {
@@ -15,15 +15,15 @@ const plans = [
     price: "$29",
     period: "/mo",
     features: ["10,000 requests/month", "Priority support", "All models included"],
-    url: "https://buy.stripe.com/PLACEHOLDER_PRO",
+    url: "https://buy.stripe.com/3cI00b9sV0SHbvBg0C7N609",
     highlighted: false,
   },
   {
     name: "Startup",
-    price: "$49",
+    price: "$79",
     period: "/mo",
     features: ["50,000 requests/month", "Slack support", "All models included"],
-    url: "https://buy.stripe.com/PLACEHOLDER_STARTUP",
+    url: "https://buy.stripe.com/aFa7sD9sVfNB4397u67N60b",
     highlighted: false,
   },
   {
@@ -31,7 +31,7 @@ const plans = [
     price: "$299",
     period: "/mo",
     features: ["Unlimited requests", "Dedicated support", "Custom integrations"],
-    url: "https://buy.stripe.com/PLACEHOLDER_ENT",
+    url: "https://buy.stripe.com/14A5kvcF70SH4399Ce7N60c",
     highlighted: false,
   },
   {
@@ -39,7 +39,7 @@ const plans = [
     price: "$499",
     period: " one-time",
     features: ["Unlimited forever", "All future updates", "Priority support"],
-    url: "https://buy.stripe.com/test_bJe3cneNfcBp2Z57u67N600",
+    url: "https://buy.stripe.com/3cI7sDeNf8l91V13dQ7N60d",
     highlighted: true,
   },
 ];
@@ -54,7 +54,7 @@ const Pricing = () => {
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
           No hidden fees. No surprise charges. Pick a plan that fits your needs.
         </p>
-        
+
         <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {plans.map((plan) => (
             <div
@@ -71,16 +71,16 @@ const Pricing = () => {
                   BEST VALUE
                 </div>
               )}
-              
+
               <h3 className="font-display text-2xl mb-2 text-secondary">
                 {plan.name.toUpperCase()}
               </h3>
-              
+
               <div className="mb-6">
                 <span className="font-display text-4xl text-primary">{plan.price}</span>
                 <span className="text-muted-foreground">{plan.period}</span>
               </div>
-              
+
               <ul className="space-y-3 mb-6">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-2 text-sm">
@@ -89,7 +89,7 @@ const Pricing = () => {
                   </li>
                 ))}
               </ul>
-              
+
               <Button
                 className={`w-full retro-shadow ${
                   plan.highlighted ? "" : "bg-secondary hover:bg-secondary/90"
@@ -103,9 +103,9 @@ const Pricing = () => {
             </div>
           ))}
         </div>
-        
+
         <p className="text-center text-sm text-muted-foreground mt-8">
-          14-day free trial with full features. No credit card required.
+          14-day money-back guarantee. Questions? Contact support.
         </p>
       </div>
     </section>
