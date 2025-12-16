@@ -7,7 +7,7 @@ const plans = [
     price: "$12",
     period: "/mo",
     features: ["2,500 requests/month", "Email support", "All models included"],
-    url: "https://buy.stripe.com/bJe00b20t58X0QX5lY7N607",
+    url: "https://buy.stripe.com/aFa6oz0WpbxldDJ5lY7N602",
     highlighted: false,
   },
   {
@@ -15,7 +15,7 @@ const plans = [
     price: "$29",
     period: "/mo",
     features: ["10,000 requests/month", "Priority support", "All models included"],
-    url: "https://buy.stripe.com/3cI00b9sV0SHbvBg0C7N609",
+    url: "https://buy.stripe.com/14A3cneNfcBparx01E7N603",
     highlighted: false,
   },
   {
@@ -23,7 +23,7 @@ const plans = [
     price: "$79",
     period: "/mo",
     features: ["50,000 requests/month", "Slack support", "All models included"],
-    url: "https://buy.stripe.com/aFa7sD9sVfNB4397u67N60b",
+    url: "https://buy.stripe.com/5kQeV56gJ6d11V16q27N604",
     highlighted: false,
   },
   {
@@ -31,7 +31,7 @@ const plans = [
     price: "$299",
     period: "/mo",
     features: ["Unlimited requests", "Dedicated support", "Custom integrations"],
-    url: "https://buy.stripe.com/14A5kvcF70SH4399Ce7N60c",
+    url: "https://buy.stripe.com/bJe28j8oRgRFczF15I7N605",
     highlighted: false,
   },
   {
@@ -39,7 +39,7 @@ const plans = [
     price: "$499",
     period: " one-time",
     features: ["Unlimited forever", "All future updates", "Priority support"],
-    url: "https://buy.stripe.com/3cI7sDeNf8l91V13dQ7N60d",
+    url: "https://buy.stripe.com/fZu6oz8oR8l91V1dSu7N606",
     highlighted: true,
   },
 ];
@@ -105,7 +105,7 @@ const Pricing = () => {
         </div>
 
         <p className="text-center text-sm text-muted-foreground mt-8">
-          14-day money-back guarantee. Questions? Contact support.
+          14-day money-back guarantee. Questions? <a href="https://targetedwebresults.com/#contact" className="underline">Contact support</a>.
         </p>
       </div>
     </section>
