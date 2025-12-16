@@ -17,7 +17,7 @@ const Footer = () => {
               <p className="text-sm opacity-70">AI Vision That Runs Anywhere</p>
             </div>
           </div>
-          
+
           <div className="flex items-center gap-6">
             <a
               href="https://github.com/Michael-A-Kuykendall/shimmy"
@@ -29,14 +29,18 @@ const Footer = () => {
               <span>GitHub</span>
             </a>
             <a
-              href="#"
+              href="https://github.com/Michael-A-Kuykendall/shimmy/wiki/Shimmy-Vision"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-primary transition-colors"
             >
               <BookOpen className="w-5 h-5" />
               <span>Docs</span>
             </a>
             <a
-              href="#"
+              href="https://targetedwebresults.com/#contact"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-primary transition-colors"
             >
               <Mail className="w-5 h-5" />
@@ -44,7 +48,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        
+
         <div className="border-t border-secondary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm opacity-70">
           <p>© 2025 Targeted Web Results LLC. All rights reserved.</p>
           <a href="#" className="hover:text-primary transition-colors">
