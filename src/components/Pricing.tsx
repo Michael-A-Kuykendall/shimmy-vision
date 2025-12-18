@@ -6,7 +6,7 @@ const plans = [
     name: "Developer",
     price: "$12",
     period: "/mo",
-    features: ["2,500 requests/month", "Email support", "All models included"],
+    features: ["2,500 requests/month", "Email support", "All analysis modes"],
     url: "https://buy.stripe.com/aFa6oz0WpbxldDJ5lY7N602",
     highlighted: false,
   },
@@ -14,7 +14,7 @@ const plans = [
     name: "Professional",
     price: "$29",
     period: "/mo",
-    features: ["10,000 requests/month", "Priority support", "All models included"],
+    features: ["10,000 requests/month", "Priority support", "All analysis modes"],
     url: "https://buy.stripe.com/14A3cneNfcBparx01E7N603",
     highlighted: false,
   },
@@ -22,7 +22,7 @@ const plans = [
     name: "Startup",
     price: "$79",
     period: "/mo",
-    features: ["50,000 requests/month", "Slack support", "All models included"],
+    features: ["50,000 requests/month", "Slack support", "All analysis modes"],
     url: "https://buy.stripe.com/5kQeV56gJ6d11V16q27N604",
     highlighted: false,
   },
@@ -52,7 +52,7 @@ const Pricing = () => {
           SIMPLE, HONEST PRICING
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          No hidden fees. No surprise charges. Pick a plan that fits your needs.
+          No hidden fees. No metered API calls. Pick a plan that fits your needs.
         </p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
@@ -105,7 +105,10 @@ const Pricing = () => {
         </div>
 
         <p className="text-center text-sm text-muted-foreground mt-8">
-          14-day money-back guarantee. Questions? <a href="https://targetedwebresults.com/#contact" className="underline">Contact support</a>.
+          14-day money-back guarantee. Questions? Email{" "}
+          <a href="mailto:michaelallenkuykendall@gmail.com" className="underline">
+            michaelallenkuykendall@gmail.com
+          </a>
         </p>
       </div>
     </section>

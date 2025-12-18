@@ -29,7 +29,7 @@ const Footer = () => {
               <span>GitHub</span>
             </a>
             <a
-              href="https://github.com/Michael-A-Kuykendall/shimmy/wiki/Shimmy-Vision"
+              href="https://github.com/Michael-A-Kuykendall/shimmy/tree/main/docs"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-primary transition-colors"
@@ -38,9 +38,7 @@ const Footer = () => {
               <span>Docs</span>
             </a>
             <a
-              href="https://targetedwebresults.com/#contact"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:michaelallenkuykendall@gmail.com"
               className="flex items-center gap-2 hover:text-primary transition-colors"
             >
               <Mail className="w-5 h-5" />
@@ -51,9 +49,11 @@ const Footer = () => {
 
         <div className="border-t border-secondary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm opacity-70">
           <p>© 2025 Targeted Web Results LLC. All rights reserved.</p>
-          <a href="#" className="hover:text-primary transition-colors">
-            Manage Subscription
-          </a>
+          <div className="flex gap-4">
+            <a href="https://billing.stripe.com/p/login/4gw4jx1Co4sZ2Ry4gg" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+              Manage Subscription
+            </a>
+          </div>
         </div>
       </div>
     </footer>

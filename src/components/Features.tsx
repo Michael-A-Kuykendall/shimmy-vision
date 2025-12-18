@@ -1,23 +1,23 @@
-import { Shield, Zap, Code } from "lucide-react";
+import { Shield, Cpu, Code } from "lucide-react";
 
 const features = [
   {
     icon: Shield,
-    title: "Local Processing",
+    title: "100% Local Processing",
     description:
-      "Your images never leave your machine. Zero data transmission, complete privacy.",
+      "Your images never leave your machine. Zero data transmission, complete privacy. Works offline after license validation.",
   },
   {
-    icon: Zap,
-    title: "One-Time Purchase",
+    icon: Cpu,
+    title: "Tiny & Fast",
     description:
-      "No metered API calls. No usage limits. Pay once, use forever.",
+      "4.8MB binary, <100ms startup, 50MB RAM. 142x smaller than Ollama. Pure Rust, no Python dependencies.",
   },
   {
     icon: Code,
     title: "OpenAI Compatible",
     description:
-      "Drop-in replacement for OpenAI Vision API. Your existing code just works.",
+      "Drop-in replacement for OpenAI Vision API. Your existing code just works. Batch processing with SSE streaming.",
   },
 ];
 
@@ -29,9 +29,9 @@ const Features = () => {
           WHY SHIMMY VISION?
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Built for developers who value privacy, simplicity, and ownership.
+          Built for developers who value privacy, performance, and simplicity.
         </p>
-        
+
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature) => (
             <div

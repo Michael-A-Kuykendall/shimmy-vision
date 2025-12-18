@@ -12,9 +12,9 @@ const faqs = [
       "You receive a license key after purchase. Add it to your API requests and you're done. No complicated setup, no activation servers.",
   },
   {
-    question: "Is there a free trial?",
+    question: "What's your refund policy?",
     answer:
-      "Yes, 14-day free trial with full features. No credit card required. Just download and start building.",
+      "14-day money-back guarantee, no questions asked. If Shimmy Vision doesn't work for your use case, we'll refund you.",
   },
   {
     question: "Can I self-host?",
@@ -22,14 +22,19 @@ const faqs = [
       "Absolutely. Shimmy runs on your hardware — Windows, Mac, or Linux. You own the software and control where it runs.",
   },
   {
-    question: "What models are supported?",
+    question: "What model does it use?",
     answer:
-      "MiniCPM-V, LLaVA, and other vision-capable GGUF models. We're constantly adding support for new models.",
+      "Shimmy Vision uses MiniCPM-V 2.6, hardcoded for quality and consistency. The model downloads automatically on first run (~4GB).",
   },
   {
     question: "Is my data private?",
     answer:
-      "100%. All processing happens locally on your machine. We never see your images, prompts, or results.",
+      "100%. All processing happens locally on your machine. We never see your images, prompts, or results. Your license key is validated once, then cached for 24 hours of offline use.",
+  },
+  {
+    question: "What analysis modes are available?",
+    answer:
+      "Five modes: 'full' (complete analysis), 'ocr' (text extraction), 'layout' (structure detection), 'brief' (quick summary), and 'web' (optimized for screenshots).",
   },
 ];
 
@@ -43,7 +48,7 @@ const FAQ = () => {
         <p className="text-center text-muted-foreground mb-12">
           Everything you need to know before getting started.
         </p>
-        
+
         <Accordion type="single" collapsible className="space-y-4">
           {faqs.map((faq, index) => (
             <AccordionItem
