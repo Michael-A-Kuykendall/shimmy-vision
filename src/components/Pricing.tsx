@@ -6,40 +6,65 @@ const plans = [
     name: "Developer",
     price: "$12",
     period: "/mo",
-    features: ["2,500 requests/month", "Email support", "All analysis modes"],
-    url: "https://buy.stripe.com/aFa6oz0WpbxldDJ5lY7N602",
+    features: [
+      "Runs locally — private by default",
+      "OCR + Layout + Web extraction",
+      "2,500 pages/month",
+      "1 machine"
+    ],
+    url: "https://shimmy-license-webhook-test.michaelallenkuykendall.workers.dev/buy?tier=developer",
     highlighted: false,
   },
   {
     name: "Professional",
     price: "$29",
     period: "/mo",
-    features: ["10,000 requests/month", "Priority support", "All analysis modes"],
-    url: "https://buy.stripe.com/14A3cneNfcBparx01E7N603",
+    features: [
+      "Client-ready results",
+      "CLI + HTTP API for automation",
+      "10,000 pages/month",
+      "1 machine"
+    ],
+    url: "https://shimmy-license-webhook-test.michaelallenkuykendall.workers.dev/buy?tier=professional",
     highlighted: false,
   },
   {
     name: "Startup",
     price: "$79",
     period: "/mo",
-    features: ["50,000 requests/month", "Slack support", "All analysis modes"],
-    url: "https://buy.stripe.com/5kQeV56gJ6d11V16q27N604",
+    features: [
+      "Turn pages into structured data",
+      "Built for teams + pipelines",
+      "50,000 pages/month",
+      "Up to 5 machines"
+    ],
+    url: "https://shimmy-license-webhook-test.michaelallenkuykendall.workers.dev/buy?tier=startup",
     highlighted: false,
   },
   {
     name: "Enterprise",
     price: "$299",
     period: "/mo",
-    features: ["Unlimited requests", "Dedicated support", "Custom integrations"],
-    url: "https://buy.stripe.com/bJe28j8oRgRFczF15I7N605",
+    features: [
+      "Unlimited pages",
+      "Unlimited machines",
+      "Runs locally for max privacy",
+      "Dedicated support"
+    ],
+    url: "https://shimmy-license-webhook-test.michaelallenkuykendall.workers.dev/buy?tier=enterprise",
     highlighted: false,
   },
   {
     name: "Lifetime",
     price: "$499",
     period: " one-time",
-    features: ["Unlimited forever", "All future updates", "Priority support"],
-    url: "https://buy.stripe.com/fZu6oz8oR8l91V1dSu7N606",
+    features: [
+      "Pay once — use forever",
+      "Unlimited pages",
+      "1 machine",
+      "All future updates"
+    ],
+    url: "https://shimmy-license-webhook-test.michaelallenkuykendall.workers.dev/buy?tier=lifetime",
     highlighted: true,
   },
 ];
