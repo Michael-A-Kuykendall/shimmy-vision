@@ -1,5 +1,6 @@
 import { Check, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const plans = [
   {
@@ -12,7 +13,7 @@ const plans = [
       "2,500 pages/month",
       "1 machine"
     ],
-    url: "https://shimmy-license-webhook-test.michaelallenkuykendall.workers.dev/buy?tier=developer",
+    tierId: "developer",
     highlighted: false,
   },
   {
@@ -25,7 +26,7 @@ const plans = [
       "10,000 pages/month",
       "1 machine"
     ],
-    url: "https://shimmy-license-webhook-test.michaelallenkuykendall.workers.dev/buy?tier=professional",
+    tierId: "professional",
     highlighted: false,
   },
   {
@@ -38,7 +39,7 @@ const plans = [
       "50,000 pages/month",
       "Up to 5 machines"
     ],
-    url: "https://shimmy-license-webhook-test.michaelallenkuykendall.workers.dev/buy?tier=startup",
+    tierId: "startup",
     highlighted: false,
   },
   {
@@ -51,7 +52,7 @@ const plans = [
       "Runs locally for max privacy",
       "Dedicated support"
     ],
-    url: "https://shimmy-license-webhook-test.michaelallenkuykendall.workers.dev/buy?tier=enterprise",
+    tierId: "enterprise",
     highlighted: false,
   },
   {
@@ -64,12 +65,14 @@ const plans = [
       "1 machine",
       "All future updates"
     ],
-    url: "https://shimmy-license-webhook-test.michaelallenkuykendall.workers.dev/buy?tier=lifetime",
+    tierId: "lifetime",
     highlighted: true,
   },
 ];
 
 const Pricing = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="pricing" className="py-20 px-4 bg-card">
       <div className="max-w-7xl mx-auto">
@@ -119,11 +122,9 @@ const Pricing = () => {
                 className={`w-full retro-shadow ${
                   plan.highlighted ? "" : "bg-secondary hover:bg-secondary/90"
                 }`}
-                asChild
+                onClick={() => navigate(`/checkout/${plan.tierId}`)}
               >
-                <a href={plan.url} target="_blank" rel="noopener noreferrer">
-                  Buy Now
-                </a>
+                Buy Now
               </Button>
             </div>
           ))}
