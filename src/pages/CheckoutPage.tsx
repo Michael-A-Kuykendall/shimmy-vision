@@ -56,22 +56,22 @@ const CheckoutPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col lg:flex-row">
+    <div className="min-h-screen bg-background flex flex-col lg:flex-row">
       {/* Left Panel: The "Closer" */}
-      <div className="w-full lg:w-1/2 bg-white p-8 lg:p-16 flex flex-col justify-center border-r border-gray-200">
+      <div className="w-full lg:w-1/2 bg-card p-8 lg:p-16 flex flex-col justify-center border-r border-border">
         <div className="max-w-lg mx-auto">
-          <a href="/" className="text-sm text-gray-500 hover:text-gray-900 mb-8 inline-block">
+          <a href="/" className="text-sm text-muted-foreground hover:text-foreground mb-8 inline-block">
             ← Back to Pricing
           </a>
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">{content.title}</h1>
-          <p className="text-xl text-gray-600 mb-8">{content.description}</p>
+          <h1 className="text-4xl font-display text-secondary mb-4">{content.title}</h1>
+          <p className="text-xl text-muted-foreground mb-8">{content.description}</p>
           
-          <div className="bg-blue-50 rounded-xl p-6 mb-8">
-            <h3 className="font-semibold text-blue-900 mb-4">What's included:</h3>
+          <div className="bg-background border-2 border-secondary retro-shadow rounded-none p-6 mb-8">
+            <h3 className="font-display text-xl text-secondary mb-4">What's included:</h3>
             <ul className="space-y-3">
               {content.features.map((feature, index) => (
-                <li key={index} className="flex items-center text-blue-800">
-                  <svg className="w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <li key={index} className="flex items-center text-muted-foreground">
+                  <svg className="w-5 h-5 mr-3 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                   </svg>
                   {feature}
@@ -80,19 +80,19 @@ const CheckoutPage = () => {
             </ul>
           </div>
 
-          <p className="text-gray-500 italic border-l-4 border-blue-500 pl-4">
+          <p className="text-muted-foreground italic border-l-4 border-primary pl-4">
             "{content.closer}"
           </p>
         </div>
       </div>
 
       {/* Right Panel: Stripe Embedded Checkout */}
-      <div className="w-full lg:w-1/2 bg-gray-50 p-4 lg:p-8 flex flex-col justify-center">
-        <div className="w-full max-w-xl mx-auto bg-white rounded-2xl shadow-sm overflow-hidden min-h-[600px]">
+      <div className="w-full lg:w-1/2 bg-background p-4 lg:p-8 flex flex-col justify-center">
+        <div className="w-full max-w-xl mx-auto bg-card border-2 border-secondary retro-shadow p-1 min-h-[600px]">
           {error ? (
-            <div className="p-8 text-center text-red-600">
+            <div className="p-8 text-center text-destructive">
               <p>{error}</p>
-              <button onClick={() => window.location.reload()} className="mt-4 text-blue-600 underline">Retry</button>
+              <button onClick={() => window.location.reload()} className="mt-4 text-primary underline">Retry</button>
             </div>
           ) : clientSecret ? (
             <EmbeddedCheckoutProvider
@@ -103,7 +103,7 @@ const CheckoutPage = () => {
             </EmbeddedCheckoutProvider>
           ) : (
             <div className="flex items-center justify-center h-full min-h-[400px]">
-              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
             </div>
           )}
         </div>
